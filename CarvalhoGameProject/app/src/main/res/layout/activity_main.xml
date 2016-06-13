@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/ScoreTV"
+        android:background="@android:color/white"
+
+
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sage"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sage0"
+        android:layout_above="@+id/generalB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tag="0"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generalB"
+        android:src="@drawable/gen0"
+        android:layout_alignTop="@+id/paladinB"
+        android:layout_alignLeft="@+id/generalA"
+        android:layout_alignStart="@+id/generalA"
+        android:tag="0"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generalA"
+        android:src="@drawable/gen0"
+        android:tag="0"
+
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_above="@+id/Sage"
+        android:layout_toLeftOf="@+id/Sage"
+        android:layout_toStartOf="@+id/Sage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paladinA"
+        android:tag="0"
+        android:layout_alignBottom="@+id/generalA"
+        android:src="@drawable/pal0"
+        android:layout_alignRight="@+id/paladinB"
+        android:layout_alignEnd="@+id/paladinB"
+        android:onClick="onTap"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paladinB"
+        android:src="@drawable/pal0"
+        android:tag="0"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ScoreTV"
+        android:layout_toEndOf="@+id/ScoreTV"
+        android:layout_marginBottom="30dp"
+        android:onClick="onTap"/>
+
+</RelativeLayout>
